@@ -1,8 +1,13 @@
-import { Button, styled, Typography } from "@mui/material";
-import { Add, Settings } from "@mui/icons-material";
+/*import { Button, styled, Typography } from "@mui/material";
+import { Add, Settings } from "@mui/icons-material";*/
+
+import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import {Box, Stack} from "@mui/material";
 
 const App = () => {
-  const BlueButton = styled(Button)(({theme}) => ({
+/*  const BlueButton = styled(Button)(({theme}) => ({
     backgroundColor: theme.palette.otherColor.main,
     color: "#888",
     margin: 5,
@@ -13,10 +18,10 @@ const App = () => {
       backgroundColor: "gray",
       color: "white"
     }
-  }));
+  }));*/
 
   return (
-    <div>
+    /*<div>
       Hello world!
       <Button variant="text" color="otherColor" endIcon={<Add />}>
         Add new
@@ -29,7 +34,7 @@ const App = () => {
       <Typography variant="h1" component="h2">
         It's h1 font size but h2 component
       </Typography>
-      {/*<Button variant="contained" sx={{
+      {/!*<Button variant="contained" sx={{
         backgroundColor: "skyblue",
         color: "#888",
         m: 5,
@@ -56,10 +61,18 @@ const App = () => {
         }
       }}>
         My unique btn
-      </Button>*/}
+      </Button>*!/}
       <BlueButton>My btn</BlueButton>
       <BlueButton>Another btn</BlueButton>
-    </div>
+    </div>*/
+    <Box>
+      {/*navbar*/}
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Stack>
+    </Box>
   );
 }
 
