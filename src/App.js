@@ -6,6 +6,7 @@ import Feed from "./components/Feed";
 import Rightbar from "./components/Rightbar";
 import {Box, Stack} from "@mui/material";
 import Navbar from "./components/Navbar";
+import Add from "./components/Add";
 
 const App = () => {
 /*  const BlueButton = styled(Button)(({theme}) => ({
@@ -74,6 +75,7 @@ const App = () => {
         <Feed />
         <Rightbar />
       </Stack>
+      <Add />
     </Box>
   );
 }
