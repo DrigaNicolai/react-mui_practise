@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Feed from "./components/Feed";
 import Rightbar from "./components/Rightbar";
 import {Box, Stack} from "@mui/material";
+import Navbar from "./components/Navbar";
 
 const App = () => {
 /*  const BlueButton = styled(Button)(({theme}) => ({
@@ -67,6 +68,7 @@ const App = () => {
     </div>*/
     <Box>
       {/*navbar*/}
+      <Navbar />
       <Stack direction="row" spacing={2} justifyContent="space-between">
         <Sidebar />
         <Feed />
