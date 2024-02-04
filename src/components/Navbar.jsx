@@ -18,10 +18,10 @@ const StyledToolbar = styled(Toolbar)({
 });
 
 const Search = styled("div")(({theme}) => ({
-  backgroundColor: "white",
+  backgroundColor: theme.palette.mode === "light" ? "white" : "#616161",
   padding: "0 10px",
   borderRadius: theme.shape.borderRadius,
-  width: "40%"
+  width: "40%",
 }));
 
 const Icons = styled(Box)(({theme}) => ({
@@ -56,6 +56,7 @@ const Navbar = () => {
         <Code sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>
           <InputBase
+            color="warning"
             placeholder="search..."
           />
         </Search>
